@@ -67,9 +67,6 @@ enum Hii: Bool? {
     case bot = false
     case too = 0 // This turns to `nil`
 }
-extension Optional: ExpressibleByIntegerLiteral  {
-    public init(integerLiteral value: Int) { self = nil }
-}
 ```
 **Note:** if you are conforming an enum to an optional version of itself, it must also conform to the `CaseIteralble` protocol.
 ```swift
@@ -79,11 +76,6 @@ enum Hi: Hi?, CaseIterable {
     case boo = "boo"
     case bot = "bot"
     case too = 0
-}
-extension Hi: ExpressibleByStringLiteral {
-    public init(stringLiteral value: String) {
-        self = Hi.allCases.filter { "\($0)" == value }.first!
-    }
 }
 ```
 ### Enum Todos
