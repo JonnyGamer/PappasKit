@@ -9,7 +9,7 @@ https://github.com/JonnyGamer/PappasKit
 # Features
 
 ### Advanced Enum Conformances
-
+Instead of only String, Int, and Floating Point Numbers.. PappasKit extends enums to be able to conform to Bool, Range, ClosedRange, Array, Set, Dictionary, and their Recursive Versions (i.e. `[[[Int]]]` or `[[String]:[Int:Int]]`)
 ```swift
 enum Foo: ClosedRange<Double> {
     case foo = "1...inf"
