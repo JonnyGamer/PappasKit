@@ -12,7 +12,7 @@ https://github.com/JonnyGamer/PappasKit
 
 The following explains what PappasKit does.
 
-- Enums
+- [Enums](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#enums)
    - Advanced Enum Conformances
    - Generic Enum Conformances
    - Optional Enum Conformances
