@@ -8,7 +8,7 @@
  See http://swift.org/CONTRIBUTORS.txt for Swift project authors
 */
 
-extension Int {
+public extension Int {
     /// Double(self)
     var db: Double { return Double(self) }
 }
