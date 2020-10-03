@@ -13,10 +13,10 @@ https://github.com/JonnyGamer/PappasKit
 The following explains what PappasKit does.
 
 - [Enums](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#enums)
-   - Advanced Enum Conformances
-   - Generic Enum Conformances
-   - Optional Enum Conformances
-   - Todo
+   - [Advanced Enum Conformances](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#advanced-enum-conformances)
+   - [Generic Enum Conformances](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#generic-enum-conformances)
+   - [Optional Enum Conformances](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#optional-enum-conformances)
+   - [Enum Todos]((https://github.com/JonnyGamer/PappasKit/blob/main/README.md#enum-todos))
    
 ---
 
@@ -86,7 +86,7 @@ extension Hi: ExpressibleByStringLiteral {
     }
 }
 ```
-### Todo
+### Enum Todos
 These examples do not work just yet.
 ```swift
 enum fff: [fff] {}
