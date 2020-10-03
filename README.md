@@ -12,11 +12,11 @@ https://github.com/JonnyGamer/PappasKit
 
 The following explains what PappasKit does.
 
-- [Enums](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#enums)
-   - [Advanced Enum Conformances](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#advanced-enum-conformances)
-   - [Generic Enum Conformances](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#generic-enum-conformances)
-   - [Optional Enum Conformances](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#optional-enum-conformances)
-   - [Enum Todos](https://github.com/JonnyGamer/PappasKit/blob/main/README.md#enum-todos)
+- [Enums](https://github.com/JonnyGamer/PappasKit#enums)
+   - [Advanced Enum Conformances](https://github.com/JonnyGamer/PappasKit#advanced-enum-conformances)
+   - [Generic Enum Conformances](https://github.com/JonnyGamer/PappasKit#generic-enum-conformances)
+   - [Optional Enum Conformances](https://github.com/JonnyGamer/PappasKit#optional-enum-conformances)
+   - [Enum Todos](https://github.com/JonnyGamer/PappasKit#enum-todos)
    
 ---
 
