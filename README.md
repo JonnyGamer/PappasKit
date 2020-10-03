@@ -77,6 +77,12 @@ enum Hi: Hi?, CaseIterable {
     case bot = "bot"
     case too = 0
 }
+// This extension is required in use
+extension Hi: ExpressibleByStringLiteral {
+    public init(stringLiteral value: String) {
+        self = Hi.allCases.filter { "\($0)" == value }.first!
+    }
+}
 ```
 ### Enum Todos
 These examples do not work just yet.
