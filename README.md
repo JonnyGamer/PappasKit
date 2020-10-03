@@ -13,8 +13,10 @@ Instead of only String, Int, and Floating Point Numbers.. PappasKit extends enum
 ```swift
 enum Foo: ClosedRange<Double> {
     case foo = "1...inf"
+    case foo = "01...inf"
 }
 print(Foo.foo.rawValue == 1...(Double.infinity))
+print(Foo.foo == Foo.bar) // Surprisingly True
 ```
 
 ```swift
