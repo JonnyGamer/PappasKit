@@ -19,7 +19,7 @@ The following explains what PappasKit does.
 ## Enums
 PappasKit greatly expands the use of enums in Swift.
 
-# Advanced Enum Conformances
+### Advanced Enum Conformances
 Instead of only String, Int, and Floating Point Numbers.. PappasKit extends enums to be able to conform to Bool, Range, and ClosedRange.
 ```swift
 enum Foo: Bool {
