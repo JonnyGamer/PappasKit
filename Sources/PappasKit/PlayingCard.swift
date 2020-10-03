@@ -9,7 +9,7 @@
 */
 
 public extension Int {
-    /// Double(self)
+    /// Turn an Int into a Double
     var db: Double { return Double(self) }
 }
 
