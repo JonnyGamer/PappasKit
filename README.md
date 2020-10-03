@@ -89,5 +89,5 @@ extension Hi: ExpressibleByStringLiteral {
 ### Enum Todos
 These examples do not work just yet.
 ```swift
-enum fff: [fff] {}
+enum foo: [foo] {}
 ```
