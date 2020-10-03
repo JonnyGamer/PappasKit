@@ -15,6 +15,37 @@ public extension Int {
 }
 
 
+
+enum Hii: Bool? {
+    typealias RawValue = Bool?
+    case boo = true
+    case bot = false
+    case too = 0 // This turns to `nil`
+}
+extension Optional: ExpressibleByIntegerLiteral  {
+    public init(integerLiteral value: Int) { self = nil }
+}
+
+// This syntax is super neat!
+public enum Hi: Hi?, CaseIterable {
+    // public typealias RawValue = Hi?
+    case boo = "boo"
+    case bot = "bot"
+    case too = 0
+}
+extension Hi: ExpressibleByStringLiteral {
+    public init(stringLiteral value: String) {
+        self = Hi.allCases.filter { "\($0)" == value }.first!
+    }
+}
+
+
+
+
+
+
+
+
 enum BoolRawValueBug: Bool {
     case bar = true
     case foo = false

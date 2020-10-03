@@ -70,6 +70,10 @@ class CardTests: XCTestCase {
         XCTAssert(DictRawValueString.foo.rawValue == [5:10, 6:100])
         XCTAssert(DictRawValueStringRecursion.foo.rawValue == [5:[10:100, 1:1000], 6:[100:1000, 10:10000]])
         XCTAssert(DictRawValueStringRecursion.bar.rawValue == [5:[:], 6:[100:1000, 10:10000]])
+        
+        let foo = Hi("boo")
+        print(foo)
+        //XCTAssert(foo == .boo)
     }
     
     func testCardSingle() {
