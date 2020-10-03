@@ -6,6 +6,8 @@ You can add us to your Swift Package Manager like so:
 https://github.com/JonnyGamer/PappasKit
 ```
 
+---
+
 # Features
 
 The following explains what PappasKit does.
@@ -15,6 +17,8 @@ The following explains what PappasKit does.
    - Generic Enum Conformances
    - Optional Enum Conformances
    - Todo
+   
+---
 
 ## Enums
 PappasKit greatly expands the use of enums in Swift.
