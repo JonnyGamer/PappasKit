@@ -23,7 +23,9 @@ enum Hii: Bool? {
     case too = 0 // This turns to `nil`
 }
 extension Optional: ExpressibleByIntegerLiteral  {
-    public init(integerLiteral value: Int) { self = nil }
+    public init(integerLiteral value: Int) {
+        self = nil
+    }
 }
 
 // This syntax is super neat!
@@ -42,11 +44,16 @@ extension Hi: ExpressibleByStringLiteral {
 
 
 
+public enum ThisIsNice: String {
+    case one = "3894983939"
+    
+}
 
 
 
 
-enum BoolRawValueBug: Bool {
+
+public enum BoolRawValueBug: Bool {
     case bar = true
     case foo = false
     case bas = 1

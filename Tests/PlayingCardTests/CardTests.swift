@@ -74,6 +74,7 @@ class CardTests: XCTestCase {
         let foo = Hi("boo")
         print(foo)
         //XCTAssert(foo == .boo)
+        
     }
     
     func testCardSingle() {
