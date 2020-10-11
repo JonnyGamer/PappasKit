@@ -1,4 +1,6 @@
 
+#if !os(macOS)
+import UIKit
 import SpriteKit
 import GameplayKit
 import Foundation
@@ -46,7 +48,6 @@ class GameViewController: UIViewController {
         return true
     }
 }
-
 
 protocol Hostable {
     var this: SKNode { get set }
@@ -480,3 +481,5 @@ class SKSwipeNode: SKNode {
 //    }
 //
 //}
+
+#endif
