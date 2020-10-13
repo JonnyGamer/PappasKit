@@ -19,7 +19,7 @@ public enum _______Foo: _______Foo?, Enum {
 }
 
 
-protocol Enum: CaseIterable, ExpressibleByStringLiteral {}
+public protocol Enum: CaseIterable, ExpressibleByStringLiteral {}
 extension Enum {
     public static func ==(lhs: Self, rhs: Self) -> Bool { "\(lhs)" == "\(rhs)" }
     public init(stringLiteral value: String) { self = Self.allCases.first { "\($0)" == value }! }
