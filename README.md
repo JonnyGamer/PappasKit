@@ -71,18 +71,12 @@ enum Hii: Bool? {
 **Note:** if you are conforming an enum to an optional version of itself, it must also conform to the `CaseIteralble` protocol.
 ```swift
 // This syntax is super neat!
-enum Hi: Hi?, CaseIterable {
-    // public typealias RawValue = Hi?
+enum Hi: Hi?, Enum {
     case boo = "boo"
     case bot = "bot"
     case too = 0
 }
-// This extension is required in use
-extension Hi: ExpressibleByStringLiteral {
-    public init(stringLiteral value: String) {
-        self = Hi.allCases.filter { "\($0)" == value }.first!
-    }
-}
+Hi.boo == Hi.boo.rawValue // true
 ```
 ### Enum Todos
 These examples do not work just yet.
