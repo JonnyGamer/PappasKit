@@ -9,6 +9,24 @@
 */
 
 
+// This syntax is super neat!
+public enum _______Foo: _______Foo?, Enum {
+    case bar = "bas"
+    case bas = "bar"
+    //case batt = "bar"
+    case bat = 0
+    case batt = 1
+}
+
+
+protocol Enum: CaseIterable, ExpressibleByStringLiteral {}
+extension Enum {
+    public static func ==(lhs: Self, rhs: Self) -> Bool { "\(lhs)" == "\(rhs)" }
+    public init(stringLiteral value: String) { self = Self.allCases.first { "\($0)" == value }! }
+}
+//print(Foo.bar == Foo.bas)
+
+
 public extension Int {
     /// Turn an Int into a Double
     var db: Double { return Double(self) }
