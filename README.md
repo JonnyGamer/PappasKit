@@ -65,7 +65,7 @@ enum Hii: Bool? {
     typealias RawValue = Bool?
     case boo = true
     case bot = false
-    case too = 0 // This turns to `nil`
+    case too = 0 // This is `nil`
 }
 ```
 **Note:** if you are conforming an enum to an optional version of itself, it must also conform to the `CaseIteralble` protocol.
@@ -74,7 +74,7 @@ enum Hii: Bool? {
 enum Hi: Hi?, Enum {
     case boo = "boo"
     case bot = "bot"
-    case too = 0
+    case too = 0 // This is `nil`
 }
 Hi.boo == Hi.boo.rawValue // true
 ```
