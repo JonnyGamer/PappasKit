@@ -17,10 +17,14 @@ let package = Package(
     name: "PappasKit",
     products: [
         .library(name: "PappasKit", targets: ["PappasKit"]),
+        .library(name: "PappasKitR", targets: ["PappasKitR"]),
     ],
     targets: [
         .target(
             name: "PappasKit",
+            dependencies: []),
+        .target(
+            name: "PappasKitR",
             dependencies: []),
         .testTarget(
             name: "PlayingCardTests",
